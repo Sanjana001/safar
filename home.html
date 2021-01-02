@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--script>
+confirm("Safar.com wants to know your location Know Your Location");
+</script-->
+</head>
+<body >
+<div class="first" id="up">
+<i class="fa fa-phone" aria-hidden="true"></i>&nbsp Phone: +91-XXXXXXXXXX &nbsp &nbsp <i class="fa fa-envelope" aria-hidden="true" ></i>&nbsp Email:info@safar.com
+&nbsp &nbsp <a  href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true" style="color:white;"></i ></a>
+&nbsp &nbsp <a  href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true" style="color:white;"></i></a>
+</div>
+<img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEuoDNRRF5K3GEeXAX4a2uXcg8wy5VlJsYNQ&usqp=CAU" style="width:100px;top:8px;">
+
+<nav>
+<ul>
+  <li><a class="active" href="#"><b>Home</b></a></li>
+  <li><a href="#dest"><b>Destination</a></b></li>
+  <li><a href="#exp"><b>Explore</b></a></li>
+  <li><a href="html/about.html"><b>About</b></a></li>
+  <li><a href="html/contactus.html"><b>Contact Us</b></a></li>
+  <li style="color:lightblack;float:right;margin-right:500px;font-size:120%;">
+    <a href="#search" class="open-button" onclick="openForm()"  ><b>Signup</b></a></li>
+   <li style="color:lightblack;float:right;font-size:120%;"> <a href="#search" class="open-button" onclick="openForm1()" ><b>LogIn</b></a>
+  </li>
+</ul>
+</nav>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function openForm1() {
+  document.getElementById("myForm1").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myForm1").style.display = "none";
+}
+
+
+</script>
+
+<div class="form-popup" id="myForm">
+  <form action="" class="form-container" name="form1" onsubmit="validateForm()">
+    <h1 style="text-align:center;">Sign Up</h1>
+
+<label for="name" ><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="t" >
+
+<label for="email" ><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" id="e" name="text1" >
+
+<label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="p" name="psw" required>
+
+<a type="submit" class="btn" id="btn" href="" style="text-decoration: none;text-align: center;padding-left: 203px;padding-right: 203px;margin-top: 0;" onclick="ValidateEmail(document.form1.text1);sign()">Sign Up</a>
+    <button type="button" class="btn cancel" style="margin-top: 15px;" onclick="closeForm()">Close</button>
+ 
+  </form>
+</div>
+
+<div class="form-popup" id="myForm1">
+  <form action="" class="form-container" name="form2" >
+    <h1 style="text-align:center;">Login</h1>
+
+<label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="text2" id="email">
+
+<label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+<a href="http://www.facebook.com" class="fb">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+    </a>
+<br>
+    <a href="http://www.twitter.com" class="twitter">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+    </a>
+<br>
+    <a href="http://www.google.com" class="google"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+    </a>
+<br><br>
+<a type="submit" class="btn" id="id" href="" style="text-decoration: none;text-align: center;padding-left: 207px;padding-right: 207px;margin-top: 0;" onclick="ValidateEmail(document.form2.text2);login()">Log In</a>
+    <button type="button" class="btn cancel" onclick="closeForm1();" style="margin-top: 22px;">Close</button>
+ 
+  </form>
+</div>
+
+<script>
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.form1.text1.focus();
+return false;
+}
+}
+
+
+function validateForm() {
+  var x = document.forms["form1"]["name"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+var person = {"sanjana@gmail.com": "Sanjana","yogita@gmail.com":"Yogita","swati@gmail.com":"Swati"}
+
+
+// Display some data from the object:
+function sign(){
+   var x = document.getElementById("t").value;
+   var e = document.getElementById("e").value;
+   if(person[e]==undefined){
+    person[e] = x;
+    document.getElementById("btn").href="webRajasthan.html";
+   }
+   else if(person[e]!=undefined && person[e]!=x)
+    alert("This email address is alreday registered.");
+   else if(person[e]==x && person[e]!=undefined)
+    alert("You have already an account with us. So, please login");
+}
+
+function login(){
+   var e = document.getElementById("email").value;
+   if(person[e]==undefined){
+    alert("You don't have any account with us. So, please sign in");
+   }
+   else
+    document.getElementById("id").href="webRajasthan.html";
+}
+
+</script>
+
+
+
+<script>
+
+var i=0;
+var images = [];
+var time = 1000;
+
+images[0]='https://ihpl.b-cdn.net/images/header-banner.jpg';
+images[1]='https://www.dhyanamindiatours.com/wp-content/uploads/2018/11/india-tour-travel.jpg';
+images[2]='https://www.indiatravelwithleisure.com/images/slider/bg1.jpg';
+images[3]='https://thelogicalindian.com/h-upload/2020/01/27/159773-tajfb.jpg';
+
+function ChangeImg()
+{
+document.slide.src = images[i];
+
+if(i< images.length -1)
+{
+i++;}
+else{i=0;}
+setTimeout("ChangeImg()",time);
+}
+window.onload = ChangeImg;
+
+
+</script>
+
+
+<img name="slide" width="100%" height="500px">
+<br><br>
+<div id="second">
+<p>Where do you want to go ?</p>
+<select id="select" name="destinations">
+    <option value="Delhi">Delhi</option>
+    <option value="Rajasthan">Rajasthan</option>
+    <option value="Goa">Goa</option>
+    <option value="Himachal Pradesh">Himachal Pradesh</option>
+  </select>
+<a style="font-size:20px;" href="" onclick="select()" id="anchor">Search</a>
+</div>
+<script>
+  function select(){
+    var x = document.getElementById("select").value;
+    if(x=="Delhi")
+      document.getElementById("anchor").href="webDelhi.html";
+    else if(x=="Rajasthan")
+      document.getElementById("anchor").href="webRajasthan.html";
+    else if(x=="Goa")
+      document.getElementById("anchor").href="webGoa.html";
+    else
+      document.getElementById("anchor").href="webHimachal.html";
+  }
+</script>
+<div>
+<div  class="exp"style="text-align:center;" id="dest">
+<div style="font-size:28px;">Must Visit Destinations</div><br>
+<div style="font-size:16px;"><b>From historical cities to natural splendours, come see the best of India</b></div>
+</div>
+<br><br>
+<div style="margin:10px;" class="d">
+<img src="https://events.3ds.com/sites/default/files/3dx-forum-delhi-india-2019-banner-1600x900.jpg" style="float:left; height:300px; width:600px;">
+<p style="text-align:center; background-color:orange; color:white;font-size:18px;width:800px;height:300px;line-height:1.5">
+Delhi<br>
+The capital of India, Delhi is a cosmopolitan city with a historic old Delhi and the modern New Delhi.
+From historical monuments to crowded shopping malls, from an extensive network of the modern metro system
+to Delhi University campus, Dilli has multiple personalities and is considered to be the city with a heart.
+Another prominent landmark of Delhi is India Gate, a 1931 built war memorial to soldiers of British Indian
+Army who died during First World War.[231] Delhi has several famous places of worship of various religions
+<br> <a href="webDelhi.html" style="text-decoration:none;">VIEW MORE</a>
+</p>
+</div>
+<br><br>
+<div style="margin:10px;" class="d">
+<img src="https://www.mapsofindia.com/maps/rajasthan/images/rajasthan.jpg" style="float:right; height:300px; width:600px;">
+<p style="text-align:center; background-color:orange; color:white;font-size:18px;width:600px;height:300px;line-height:1.5">
+Rajasthan<br>
+Rajasthan, one of the most coveted travel destinations in India and worldwide, is
+the land of glistening sandy deserts, multi-coloured fabrics, dulcet folk songs and
+sprightly dances, ancient traditions and rich handicrafts.
+Rajasthan encompasses the warm and simplistic lifestyle of the natives and witness to historic battles
+.In every street you will find a new ritual, in every face, you'll see an acquaintance.
+<br> <a href="webRajasthan.html" style="text-decoration:none;">VIEW MORE</a>
+</p>
+</div>
+<br><br>
+<div style="margin:10px;" class="d">
+<img src="https://www.tourmyindia.com/socialimg/goa-tourism.jpg" style="float:left; height:300px; width:600px;">
+<p style="text-align:center; background-color:orange; color:white;font-size:18px;width:900px;height:300px;line-height:1.5">
+Goa<br>
+Goa is a state located on the western coast of India. The coastline of Goa is far
+ stretched beside the Arabian Sea. Goa was once a Portuguese colony. The state is
+ often considered as a laid-back destination and is well-known for its palm tree-fringed
+ beaches and vibrant culture.Moreover, water sports such as snorkeling, surfing,
+ scuba diving, and jet skiing five Goa tourism a boost.
+ Rice with fish curry is the staple diet in Goa. Goan cuisine is famous for its rich
+ variety of fish dishes cooked with elaborate recipes. Coconut and coconut oil are widely
+ used in Goan cooking along with chili peppers, spices, and vinegar is used in the
+ Catholic cuisine, giving the food a unique flavour.
+ <br> <a href="webGoa.html" style="text-decoration:none;">VIEW MORE</a>
+</p>
+</div>
+<br><br>
+<div style="margin:10px;" class="d";>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQoOa44Irfs0ruiQjbxiP7jCNpm5b6cP9IZw&usqp=CAU" style="float:right; height:300px; width:600px;">
+<p style="text-align:center; background-color:orange; color:white;font-size:18px;width:900px;height:300px;line-height:1.5">
+Himachal Pradesh<br>
+Himachal Pradesh has always been the priority destination of nature lovers. We welcome you to visit this
+beautiful part of India.Looking forward to explore beautiful destinations in Himachal Pradesh such as Kullu valley in Himachal,
+ Beas River valley in Manali, smallest Himalayan hill resorts in Chail, Dharamshala lying on the spur of the
+ Dhauladhar range, Dalhousie most popular destination and worth visiting with family and loved ones.
+<br> <a href="webHimachal.html" style="text-decoration:none;">VIEW MORE</a>
+</p>
+</div>
+</div>
+<br><br><br><br>
+
+
+
+<div>
+<div  class="exp"style="text-align:center;" id="exp">
+<div style="font-size:28px;">Immersive Experiences</div><br>
+<div style="font-size:16px;"><b>In the land of opulence, let loose and discover yourself</b></div>
+</div>
+<br><br>
+<div class="expimagecontainer" style="display:grid; grid-template-columns:220px 220px 220px 220px 220px 220px; grid-gap:30px;">
+
+<div class="expcontainer">
+<img class="image1" src="https://static.toiimg.com/thumb/76395036.cms?resizemode=75&width=1200&height=900"  style="width:220px; height:180px; border-radius:7px;" >
+<span class="overlay"><div class="text"></div>Heritage</span>
+</div>
+
+<div class="expcontainer">
+<img class="image1" src="https://img.static-af.com/images/meta/IDname/CITY-DEL-1?aspect_ratio=2:1&max_width=1920" style="width:220px; height:180px; border-radius:7px;">
+<span class="overlay">Historical Monuments</span>
+</div>
+
+<div class="expcontainer">
+<img class="image1" src="https://www.rajasthantourplanner.com/blog/wp-content/uploads/2018/02/4.jpg" style="width:220px; height:180px; border-radius:7px;">
+<span class="overlay">Dance and Music</span>
+</div>
+
+<div class="expcontainer">
+<img class="image1" src="https://breathedreamgo.com/wp-content/uploads/2015/04/Delhi-food-Rajdhani-2.jpg" style="width:220px; height:180px; border-radius:7px;">
+<div class="overlay">Food and cuisine</div>
+</div>
+
+<div class="expcontainer">
+<img class="image1" src="https://imgcld.yatra.com/ytimages/image/upload/t_ann_seo_banner_tab/v1517482034/AdvNation/ANN_TRP583/Goa_bmcfkn_K0IsKh.jpg" style="width:220px; height:180px;border-radius:7px;">
+<div class="overlay">Adventure and Thrill</div>
+</div>
+
+<div class="expcontainer">
+<img class="image1" src="https://www.bespokeindiaholidays.com/wp-content/uploads/bfi_thumb/South-India-Wildlife-v2ptda3cqada2910gep7gg.jpg" style="width:220px; height:180px; border-radius:7px;">
+<div class="overlay">Nature and Wildlife</div>
+</div>
+
+<div class="expcontainer">
+<img class="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSU9cEGTFgmApKkDjcyz3mmvAp5Yxx2KVUpqA&usqp=CAU" style="width:220px; height:180px; border-radius:7px;">
+<div class="overlay">Luxury</div>
+</div>
+
+<div class="expcontainer">
+<img class="image1" src="https://hpgeneralstudies.com/wp-content/uploads/2017/08/manu-temple-shanshar-hpgeneralstudies.jpg" style="width:220px; height:180px; border-radius:7px;">
+<div class="overlay">Spiritual</div>
+</div>
+
+<div class="expcontainer">
+<img class="image1" src="https://static.financialexpress.com/m-images/M_Id_471153_Toilet_Museum_India.jpg" style="width:220px; height:180px; border-radius:7px;">
+<div class="overlay">Musems in india</div>
+</div>
+
+<div class="expcontainer">
+<img class="image1" src="https://www.ohmyrajasthan.com/uploads/4/OMR-682802803Bangles-Mahesh-Balasubramanian.jpg" style="width:220px; height:180px; border-radius:7px;">
+<div class="overlay">Shopping in India</div>
+</div>
+
+<div class="expcontainer">
+<img class="image1" src="https://www.thebetterindia.com/wp-content/uploads/2017/02/13pragoverview.jpg" style="width:220px; height:180px;border-radius:7px;">
+<div class="overlay">Yoga and wellness</div>
+</div>
+
+<div class="expcontainer">
+<img class="image1" src="https://i.pinimg.com/originals/7c/2e/40/7c2e40f7ac1c2c89592f3979303e9f13.jpg" style="width:220px; height:180px;border-radius:7px;">
+<div class="overlay">Art</div>
+</div>
+</div>
+</div>
+
+<br><br><br>
+
+
+
+<a href="#up" >
+<img style="height:60px;width:50px;margin-left:600px;"src="https://png.pngtree.com/png-vector/20190419/ourlarge/pngtree-vector-up-arrow-icon-png-image_956434.jpg">
+</a>
+
+
+
+
+
+<br><br><br><br>
+<footer  style="background-color:black;">
+<div style="display:grid;  grid-template-columns: 25% 25% 25% 25%; " >
+<div class="About" style="color:#7c7e83;  margin:15px; ">
+<h3 style="color:rgb(197, 197, 197);">About Us</h3>
+<div  style="line-height:1.8;">Safar is a leading online travel company in
+ India providing a 'best in class' customer
+ experience with the goal to be 'India's
+ Travel Planner'.
+A strong and "trusted" travel brand of India, our strengths include
+ a multi-channel platform for leisure
+ and business travelers and a seasoned senior
+management team comprising of industry executives with deep roots
+in the travel industry in India and abroad.
+</div>
+</div>
+<div class="Contact" style="color:#7c7e83;  margin:15px; ">
+<h3 style="color:rgb(197, 197, 197);">Contact Us</h3>
+<table cellpadding="7px" cellspacing="10px">
+<tr>
+<td><i class="fa fa-map-marker" aria-hidden="true" style="color:orange;"></i></td><td>Address: S-15, Model Town Road, Jalandhar, Punjab 144001 </td>
+</tr>
+<tr>
+<td><i class="fa fa-envelope" aria-hidden="true" style="color:orange;"></i></td><td>Email:info@safar.com </td>
+</tr>
+<tr>
+<td><i class="fa fa-phone" aria-hidden="true" style="color:orange;"></i></td><td>Phone: +91-XXXXXXXXXX</td>
+</tr>
+</table>
+</div>
+<div class="location" style="color:#7c7e83;  margin:15px; ">
+<h3 style="color:rgb(197, 197, 197);">Location</h3>
+<iframe width="320" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=chitkara%20University,rajpura%20Mohali+(chitkara%20University)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+</script>
+</div>
+<div class="query" style="color:#7c7e83; margin:15px;">
+<h3 style="color:rgb(197, 197, 197);">Send Query</h3><br>
+<form>
+<input type="text" placeholder="Enter Your Name" style="width:180px;padding:10px;" required><br><br>
+<input type="number" placeholder="Enter Your Phone" style="width:180px;padding:10px;" required><br><br>
+<input type="email" placeholder="Enter Your Email" style="width:180px;padding:10px;" required><br><br>
+<textarea rows="5" cols="38" placeholder="Enter your Message"></textarea><br>
+<button type="submit" style=" color:white;width:120px;padding:3px;background-color:orange; font-size:18px;">Send Query</button>
+</form>
+</div>
+</div>
+<div style="text-align:center; height:30px;padding:5px;">
+<span style="color:#7c7e83;"> Design & Developed by </span><span style="color:orange;">TeamSafar</span>
+</div>
+</footer>
+</body>
+</html>
