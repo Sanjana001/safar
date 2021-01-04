@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rajasthan</title>
+		<link rel="stylesheet" href="css/webRajasthan.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="js/webRajasthan.js" type="text/javascript"></script>
+		<style>
+			.mySlides{display:none;width: 266%;height: 400px;}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<ul class="head">
+				<li id="h"><a href="index.html">Home</li></a><li id="a"><a href="html/about.html">About</li></a><li id="c"><a href="html/contactus.html">Contact Us</li></a><li id="e"><a href="guide.html">Help</a></ul>
+			<ul class="head1">
+			   <li><a href="https://www.twitter.com" target="blank"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" width="28" height="26"></a><li><a href="https://www.instagram.com" target="blank"><img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/instagram-512.png" width="28" height="26"></a></li><li><a href="https://www.whatsapp.com" target="blank"><img src="https://cdn.iconscout.com/icon/free/png-512/whatsapp-circle-1868968-1583132.png" width="28" height="26"></a></li><li><a href="https://www.gmail.com" target="blank"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-circular-color/512/gmail-512.png" width="28" height="26"></a></li><li><a href="https://www.facebook.com" target="blank"><img src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-facebook-2019-circle-512.png" width="28" height="26"></a></li></ul>
+	  </div>
+		<div class="main">
+        <a href="index.html">Home</a><a href="html/about.html">About</a><button class="dropdown-btn">Delhi<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+            <a href="#">About</a><a href="#">Historic</a><a href="#">Culture</a><a href="#">Cuisine</a></div>
+            <button class="dropdown-btn">Goa<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container"><a href="#">About</a><a href="#">Beaches</a><a href="#">Cuisine</a></div>
+            <button class="dropdown-btn">Himachal Pradesh<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container"><a href="#">About</a><a href="#">Dharamshala</a><a href="#">Shimla</a><a href="#">Manali</a></div>
+            <button class="active" style="font-size: 20px;padding: 6px 8px 6px 16px;width: 100%;text-align: left">Rajasthan<i class="fa fa-caret-up" style="padding-right: 8px;float:right;"></i></button><a href="#about" style="margin-left: 10px;" onclick="f1()" id="ab">About</a><a href="#Jaipur" id="ac" onclick="f2()" style="margin-left: 10px;">Jaipur</a><a href="#Udaipur" style="margin-left: 10px;" id="ad" onclick="f3()">Udaipur</a><a href="#Jodhpur" style="margin-left: 10px;" id="ae" onclick="a()">Jodhpur</a><a href="#Mount" style="margin-left: 10px;" id="af" onclick="b()">Mount Abu</a>
+            <button class="dropdown-btn">Punjab<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container"><a href="#">About</a><a href="#">Amritsar</a><a href="#">Patiala</a><a href="#">Ludhiana</a></div>
+            <a href="html/guide.html" id="main">Guides</a><a href="html/contactus.html" id="main">Contact Us</a>
+    </div>
+		<div class="main1" id="head">
+		    	<div class="man">
+		    	<img class="slides" src="https://www.swantour.com/blogs/wp-content/uploads/2019/02/Popular-Rajasthani-Dish-Dal-Bati.jpg" alt="Cuisine" height="500"><img class="slides" src="https://www.rajasthanfortsandpalaces.com/images/activity/794994615776176457606542.jpg" alt="Culture" height="500"><img class="slides" src="https://i.ytimg.com/vi/ImbO6cPEms4/maxresdefault.jpg" alt="Forts" height="500"><img class="slides" src="https://img.latestgkgs.com/2018/05/22/-1526991684.jpg" alt="Rajasthan" height="500"></div>
+          <div class="man1">
+              <div class="m" style="background-color: peachpuff;"><h1>Rajasthan</h1><p id="p">The state of</p><h2>Maharajas</h2><p id="q">and</p><h2>Rajputs</h2></div>
+		    	    <div class="a" style="background-color: khaki">
+		    		    <table><tr><th colspan="2" style="font-size:20px;">Rajasthan Info</th></tr><tr><td id="t">Currency: </td><td id="d">Indian Rupees</td></tr><tr><td id="t">Population: </td><td id="d">73.53 million</td></tr><tr><td id="t">Time Zone: </td><td id="d">GMT+5:30 hours</td></tr><tr><td id="t">Area: </td><td id="d">342239 m<sup>2</sup></td></tr><tr><td id="t">Capital: </td><td id="d">Jaipur</td></tr><tr><td id="t">Official Language: </td><td id="d">Hindi</td></tr><tr><td id="t">Calling code: </td><td id="d">+91-141</td></tr></table></div></div>
+    </div>
+		<div class="main2"id="about">
+		    <div class="man2">
+		    	<div class="About" style="height: 350px;">
+		    		<h1 style="text-shadow: 2px 2px blue;color: fuchsia;">About</h1>
+		    		<div class="btn">
+		    			<button onclick="myfunction()" id="btn">At a Glimpse</button><button onclick="myfunction1()" id="btn1">State Tourism</button><button onclick="myfunction2()" id="btn2">Best Time to Visit</button><button onclick="myfunction3()" id="btn3">Tourists Attraction</button><button onclick="myfunction4()" id="btn4">How to Reach</button><button onclick="myfunction5()" id="btn5">Getting Round</button></div>
+		    	<div class="hr"></div>
+		    	<br><br><p id="demo" style="margin-top: 0px;">Rajasthan is a state in northern India. It is the largest Indian state by area and the seventh largest by population. Rajasthan is located on the northwestern side of India, where it comprises most of the wide and inhospitable Thar Desert (also known as the "Great Indian Desert") and shares a border with the Pakistani provinces of Punjab to the northwest and Sindh to the west, along the Sutlej-Indus river valley. <br><br>It is bordered by five other Indian states: Punjab to the north; Haryana and Uttar Pradesh to the northeast; Madhya Pradesh to the southeast; and Gujarat to the southwest. Its geographical location is 23.3 to 30.12 North latitude and 69.30 to 78.17 East longitude, with the Tropic of Cancer passing through southernmost tip of the state.</p></div>
+          <div style="height: 150px;width: 100%;margin-top: 0" class="ho">
+             <div style="height: 150px;width: 20%;margin-top: 0;float:left;margin-left: 10%;">
+              <img src="https://m.jagranjosh.com/imported/images/E/Articles/Rajasthan-State-File.jpg" style="width: 100%;height: 150px"></div>
+             <div style="height: 150px;width: 40%;margin-top: 0;float:left;background-color: seashell;"><h3>Sarthak Resort,Rajasthan-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 15px;border: 2px solid white;border-radius: 4px;cursor: pointer;">12 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Mumbai(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Rajasthan(3)</span><p>Safar.com comes with service assurance package for exploring the Rajasthan.</p></div>
+             <div style="height: 150px;width: 20%;margin-top: 0;margin-right: 10%;float:left;background-color: lavender;"><span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 30px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>30,499</span><br><br><br><span style="font-size: 15px;color: grey;margin-left: 20px;">(Per person on twin sharing)</span><br><br><button onmouseover="f8()" onmouseout="f9(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 60px;padding-bottom: 5px;cursor: pointer;" class="s3" id="s3" onclick="button1()">Book Now</button></div>
+          </div>
+        </div>
+		    <div class="man3" style="margin-top: 20px">
+		    	<div class="holiday">
+		    		<h3 id="h2">Rajasthan Holiday Package</h3><div style="width: 100%;height: 95px;background-color: pink;"><img src="https://ihplb.b-cdn.net/wp-content/uploads/2011/02/Forts.jpg" height="95" style="width: 100%"></div><span style="color: brown;margin-left: 50px;">15 Nights, 16 Days </span><br><span style="margin-left: 40px;color: green;cursor: pointer;">Hotel: Padharo Resort</span><br><span style="margin-left: 40px;color: brown">Delhi(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Rajasthan(3)</span><p style="margin-left: 10px;">Safar.com comes with service assurance packages for exclusive assistance.A mandatory sanity check has been conducted over before going to the trip.</p><span class="emi">EMI</span><span style="font-size: 18px;margin-left: 10px;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="color: fuchsia;text-shadow: 2px 2px blue;font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 22px;font-weight: bold;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>30,499</span><br><span style="font-size: 14px;color: grey;margin-left: 125px;">(Per person on </span><span style="font-size: 14px;color: grey;margin-left: 125px;">twin sharing)</span><br><br><a href="form.html" onmouseover="f6()" onmouseout="f7(this)" style="background-color: blue; color: white;padding-top: 5px;margin-left: 60px;padding-bottom: 5px;cursor: pointer;" onclick="button()" class="s2" id="s2">Book Now</a></div></div>
+		    </div>
+        <!--div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 style="text-align: center;color: blue;text-shadow: 2px 2px aqua;">Rajasthan Holiday Package</h3>
+              <div class="division"><img src="Photos/rajas.jpg"></div><div class="section">According to this package your staycation will be Padharo Resort. This resort is situated in Jaipur and you can also search this webpage on <a href="https://www.google.com" style="color: blue;text-decoration: underline">google</a>. This resort takes all the precautions regarding the Covid-19. And it also provides you the facility of tourist guides at free of cost. We will send your flight tickets to your email because <a style="color: red;cursor:pointer;text-decoration: underline;" href="">Safar.com</a> always desire your enjoyable journey. If you don't want to go on flight you can send us your desired mean of transport.</div>
+              <p>Enter your email so we can find the best of your email</p><input type="email" placeholder="Email">
+              <button class="button"><a href="Modal.html">Proceed to Payment</a></button></div></div-->
+<!--script>
+// When the user clicks on <span> (x), close the modal
+// When the user clicks anywhere outside of the modal, close it
+// Get the button that opens the modal
+// Get the <span> element that closes the modal
+var modal = document.getElementById("modal");
+var btn = document.getElementById("s2");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {modal.style.display = "block";}
+span.onclick = function() {modal.style.display = "none";}
+window.onclick = function(event) {if (event.target == modal) {modal.style.display = "none";}}
+</script-->
+		    <h3 style="color:lime;text-shadow: 1px 1px blue;text-align:center;" id="Jaipur">Some cities and holiday packages for exploring the Rajasthan</h3>
+		    <h1 style="color:red;text-shadow: 2px 2px blue;text-align:center;font-size: 40px">Jaipur</h1>
+            <div class="Jaipur">
+               <div class="container">
+                   <a class="prev" onclick="plusSlides(-1)">❮</a><a class="next" onclick="plusSlides(1)">❯</a>
+                   <div class="mySlides">
+  	                   <div class="row">
+                            <div class="numbertext">1 / 12</div><div class="text">Birla Mandir</div></div>
+                            <div class="caption"><img src="https://www.transindiatravels.com/wp-content/uploads/birla-mandir-3.jpg" style="width: 37.6%;height:320px;"><div class="cap" style="background-color: purple;color: white;">Birla Mandir is a very famous temple and a highly-regarded pilgrimage for the Hindus. This temple is surrounded by lush gardens on all sides and is a treat for the eyes to see such colourful flowers all in one place.</div></div></div>
+                   <div class="mySlides">
+                       <div class="row">
+                           <div class="numbertext">2 / 12</div><div class="text">City Palace</div></div>
+                           <div class="caption"><img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2019/11/city-palace-jaipur-1573460978.jpg" style="width: 37.6%;height:320px"><div class="cap" style="background-color: olive;color: white;">The City Palace, Jaipur was established at the same time as the city of Jaipur, by Maharaja Sawai Jai Singh II, who moved his court to Jaipur from Amber, in 1727. Jaipur is the present-day capital of the state of Rajasthan, and until 1949 the City Palace was the ceremonial and administrative seat of the Maharaja of Jaipur.</div></div></div>
+                    <div class="mySlides">
+                        <div class="row">
+                            <div class="numbertext">3 / 12</div><div class="text">Jantar Mantar Observatory</div></div>
+                            <div class="caption"><img src="https://www.transindiatravels.com/wp-content/uploads/jantar-mantar-observatory-1.jpg" style="width:37.6%;height:320px"><div class="cap" style="background-color: aqua;color: white;">The Jantar Mantar is a collection of nineteen architectural astronomical instruments built by the Rajput king Sawai Jai Singh I, the founder of Jaipur, Rajasthan. The monument was completed in 1734. It features the world's largest stone sundial, and is a UNESCO World Heritage site.</div></div></div>
+                    <div class="mySlides">
+                        <div class="row">
+                            <div class="numbertext">4 / 12</div><div class="text">Hawa Mahal</div></div>
+                            <div class="caption"><img src="https://virajtravels.in/wp-content/uploads/2017/03/hawa-mahal-jaipur-india.jpg" style="width: 37.6%;height:320px"><div class="cap" style="background-color: red;color: white;">Hawa Mahal is a palace in Jaipur, India. Built from red and pink sandstone, the palace sits on the edge of the City Palace, Jaipur, and extends to the Zenana, or women's chambers. The structure was built in 1799 by Maharaja Sawai Pratap Singh, the grandson of Maharaja Sawai Jai Singh, who was the founder of Jaipur.</div></div></div>
+                    <div class="mySlides">
+                        <div class="row">
+                            <div class="numbertext">5 / 12</div><div class="text">Govind Dev Ji Temple</div></div>
+                            <div class="caption"><img src="https://www.transindiatravels.com/wp-content/uploads/govind-devji-idol.jpg" style="width: 37.6%;height:320px"><div class="cap" style="background-color: darkviolet;color: white;">The Vaishnava temple Govind Dev Ji is situated in Jaipur district in Rajasthan state of India. It is located in the City Palace complex. Murti is easily visible from City Palace. </div></div></div>
+                    <div class="mySlides">
+                        <div class="row">
+                        <div class="numbertext">6 / 12</div><div class="text">Jaipur's Culture</div></div>
+                        <div class="caption"><img src="https://i.pinimg.com/474x/c0/b5/f0/c0b5f0ab4550d65598a1573ef96732df.jpg" style="width: 37.6%;height:320px"><div class="cap" style="background-color: cyan;color: white;">The people of this lively town are friendly and warm. Their colourful outfits and unique jewellery are the part of their culture displayed in a flamboyant way. They love to dance to the tunes of Rajasthani folk songs. Famous dances of Jaipur include Ghoomar, Chari where the dancers got to dance on a pot with a lit diya on their head. Traditional instruments like Sarangi, Ektara, and Jhalar are also played while singing folk songs</div></div></div>
+                   <div class="mySlides">
+  	                    <div class="row">
+                            <div class="numbertext">7 / 12</div><div class="text">Jal Mahal</div></div>
+                            <div class="caption"><img src="https://miro.medium.com/max/1024/1*xAoIHC3PGFmAA2YYwOKgyQ.jpeg" style="width: 37.6%;height:320px"><div class="cap" style="background-color: indigo;color: white;">Jal Mahal (meaning "Water Palace") is a palace in the middle of the Man Sagar Lake in Jaipur city, the capital of the state of Rajasthan, India. The palace and the lake around it were renovated and enlarged in the 18th century by Maharaja Jai Singh II of Amber.</div></div></div>
+                   <div class="mySlides">
+  	                    <div class="row">
+                            <div class="numbertext">8 / 12</div><div class="text">Jaipur's Street Food</div></div>
+                            <div class="caption"><img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_540536074-1200x900_20191106144331.jpg" style="width: 37.6%;height:320px"><div class="cap" style="background-color: white;color: black;"> From going crazy over the tangy golgappas at Chawla's and tasting crispy pyaaz kachoris at Rawat Misthan Bhandar to getting your hands dirty at Sethi Bar-Be-Que; the Jaipur's street food will leave you longing for more. The narrow lanes of the Pink City are bustling with such street side food vendors selling almost everything, be it a cool glass of lassi, a variety of omelettes or kulfi faludas.</div></div></div>
+                    <div class="mySlides">
+  	                    <div class="row">
+                            <div class="numbertext">9 / 12</div><div class="text">Albert Hall</div></div>
+                            <div class="caption"><img src="https://www.transindiatravels.com/wp-content/uploads/albert-hall-museum.jpg" style="width: 37.6%;height:320px"><div class="cap" style="background-color: deeppink;color: white;">The Albert Hall Museum in Jaipur is the oldest museum of the state and functions as the state museum of Rajasthan, India. The building is situated in Ram Niwas garden outside the city wall opposite New gate and is a fine example of Indo-Saracenic architecture. It is also called the Government Central Museum.</div></div></div>
+                    <div class="mySlides">
+  	                    <div class="row">
+                            <div class="numbertext">10 / 12</div><div class="text">Nahagarh Fort</div></div>
+                            <div class="caption"><img src="https://www.rajasthantourplanner.com/images/NahargarhfortJaipur.jpg" style="width: 37.6%;height:320px"><div class="cap" style="background-color: ;color: white;"> Nahargarh Fort stands on the edge of the Aravalli Hills, overlooking the city of Jaipur in the Indian state of Rajasthan. Along with Amer Fort and Jaigarh Fort, Nahargarh once formed a strong defense ring for the city.</div></div></div>
+                    <div class="mySlides">
+  	                    <div class="row">
+                            <div class="numbertext">11 / 12</div><div class="text">Amer Fort</div></div>
+                            <div class="caption"><img src="https://www.transindiatravels.com/wp-content/uploads/amer-fort2.jpg" style="width: 37.6%;height:320px"><div class="cap" style="background-color: blue;color: white;">Amer Fort or Amber Fort is a fort located in Amer, Rajasthan, India. Amer is a town with an area of 4 square kilometres located 11 kilometres from Jaipur, the capital of Rajasthan.</div></div></div>
+                    <div class="mySlides">
+  	                    <div class="row">
+                            <div class="numbertext">12 / 12</div><div class="text">Jaipur Wax Museum</div></div>
+                            <div class="caption"><img src="https://pickyourtrail.com/blog/wp-content/uploads/2020/06/05_0.jpg" style="width: 37.6%;height:320px"><div class="cap" style="background-color: crimson;color: white;"> Jaipur Wax Museum has been created with an idea of giving people of Jaipur and travelers from all around the world something unique to see. This museum is home to brilliant statues of people who hold an important place in the history of cinema, art, literature, sports, and royals.</div></div></div></div><div class="img1" style="background:none;"><div style="background-color: lightcyan;"><h1>Jaipur</h1><p id="p">the capital of</p><h2>Rajasthan</h2><p style="color: brown; margin-left: 10px;font-weight: bold;">The city which is called as the</p><h2>Pink City</h2><p style="font-size: 15px;text-align: center;color: green;">At the center of its stately street grid (notable in India) stands the opulent, colonnaded City Palace complex. With gardens, courtyards and museums, part of it is still a royal residence.</p></div></div></div>
+      <div class="main3" style="margin-top: 23px;">
+		    <div class="man4">
+		    		<div class="About">
+		    			<h2 style="text-shadow: 2px 2px blue;color: fuchsia;">About</h2>
+		    			<div class="btn1"><button onclick="myfunction6()" id="bt">At a Glimpse</button><button onclick="myfunction7()" id="bt1">Best Time to Visit</button><button onclick="myfunction8()" id="bt2">Tourists Attraction</button></div><div class="hr"></div>
+		    			<br><br><p id="demo1">Jaipur is known as the pink city as the historic centre of Jaipur is painted a terracotta pink colour and there is even a local law that instructs all buildings within Jaipur be painted the distinctive pink. The reason is that this pink is a royal colour and the entire city was painted, under the direction of the Maharajah for the visit of Prince Albert in 1876.<br><br>Jaipur is situated between Delhi and the popular western Rajasthan area, therefore the city is a convenient destination to add to any tour of the region. For visitors following the shorter “Golden Triangle Tour route” Jaipur has a unique atmosphere and heritage when compared to Delhi and Agra.</p></div></div>
+		    	<div class="man5">
+		    		<div class="holiday" style="border: 4px solid maroon;margin-top: 10px;background-color: khaki;height: 500px;"><h3 id="h2">Jaipur Holiday Package</h3><div style="width: 100%;height: 95px;"><img src="Rajasthan_Images/jai.jpg" height="90" style="width: 100%"></div><span style="color: brown;margin-left: 50px;">8 Nights, 9 Days </span><br><span style="margin-left: 40px;color: green;cursor: pointer;">Hotel: Jai Resort</span><br><span style="margin-left: 40px;color: brown">Delhi(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Jaipur(3)</span><p style="margin-left: 10px;">Safar.com comes with service assurance packages (included sanitary checkup) for exclusive assistance.</p><span class="emi">EMI</span><span style="font-size: 18px;margin-left: 10px;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="color: fuchsia;text-shadow: 2px 2px blue;font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 22px;font-weight: bold;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>18,499</span><br><span style="font-size: 14px;color: grey;margin-left: 125px;">(Per person on </span><span style="font-size: 14px;color: grey;margin-left: 125px;">twin sharing)</span><br><br><a href="form.html" onmouseover="f4()" onmouseout="f5(this)" style="background-color: blue; color: white;padding-top: 5px;margin-left: 60px;padding-bottom: 5px;cursor: pointer;" class="s1">Book Now</a></div></div>
+    </div>
+		<div class="flex" style="width: 85%;height: 320px;margin-top: 40px;">
+        <div style="width: 45%;height: 150px;margin-top: 0px;float: left;margin-left: 2%;" class="fl0">
+          <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/jaipur.webp" style="width: 100%;height: 150px;" alt="Jaipur">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Pink Resort, Jaipur-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">7 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Mumbai(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Jaipur(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Jaipur.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>28,499</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Per person on twin sharing)</span><br><br><a href="form.html" onmouseover="f0()" onmouseout="ff0(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="s">Book Now</a>
+          </div>
+        </div><div style="width: 45%;height: 150px;margin-top: 0px;float: left;margin-left: 5%"  class="fl1">
+           <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/jaipur.webp" style="width: 100%;height: 150px;" alt="Jaipur">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Welcome Hotel, Jaipur-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">7 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Bangalore(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Jaipur(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Jaipur.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>25,499</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Per person on twin sharing)</span><br><br><a href="form.html" onmouseover="ff1()" onmouseout="ff2(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="s0">Book Now</a>
+          </div>
+        </div><div style="width: 45%;height: 150px;margin-top: 20px;float: left;margin-left: 2%"  class="fl2">
+            <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/jaipur.webp" style="width: 100%;height: 150px;" alt="Jaipur">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Jaipur Lodge,Jaipur-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">7 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Gujarat(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Jaipur(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Jaipur.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>8,499</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Per person on twin sharing)</span><br><br><a href="form.html" onmouseover="ff3()" onmouseout="ff4(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="p0">Book Now</a>
+          </div>
+        </div><div style="width: 45%;height: 150px;margin-top: 20px;float: left;margin-left: 5%"  class="fl3">
+          <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/jaipur.webp" style="width: 100%;height: 150px;" alt="Jaipur">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Sarab Resort,Jaipur-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">7 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Delhi(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Jaipur(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Rajasthan.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>60,499</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Specially ofr families)</span><br><br><a href="form.html" onmouseover="ff5()" onmouseout="ff6(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="p1">Book Now</a></div></div> 
+		    </div>
+		    <h1 style="color:red;text-shadow: 2px 2px blue;text-align:center;font-size: 40px"id="Udaipur">Udaipur</h1>
+        <div class="Udaipur">
+          <div class="container">
+            <div class="col1">
+             	<div class="numbertext" style="width:100%;font-weight: bold;">Places to be Visit in Udaipur</div>
+             		<div class="rows">
+             			<div style="margin-right: 15px;" id="flex"><img src="https://udaipurtourism.co.in/images/places-to-visit/headers/city-palace-udaipur-indian-tourism-entry-fee-timings-holidays-reviews-header.jpg" style="width:100%;height:100%;border-radius: 10%;" onclick="flex()"></div>
+             			<div style="margin-right: 15px;" id="flex1"><img src="https://www.transindiatravels.com/wp-content/uploads/lake-pichola-1.jpg" style="width: 100%;height:100%;border-radius: 10%;" onclick="flex1()"></div>
+             			<div id="flex2"><img src="https://ntmresizer.azureedge.net/sized/780/437/www.cfmedia.vfmleonardo.com/imageRepo/1/0/27/642/322/007_Lilypond_O.jpg" style="width:100%;height:100%;border-radius: 10%;" onclick="flex2()"></div>
+             		</div>
+             		<div class="rows1" style="margin-top: 15px;">
+             				<div style="margin-right: 15px;" id="flex3"><img src="https://www.mygreedybackpack.com/wp-content/uploads/2013/09/Jagmandir.jpg" style="width: 100%;height:100%;border-radius: 10%;" onclick="flex3()"></div>
+             				<div style="margin-right: 15px;" id="flex4"><img src="https://www.indiapalette.com/wp-content/uploads/2017/09/Bagore-Ki-Haveli-in-Udaipur-2.jpg" style="width: 100%;height:100%;border-radius: 10%;" onclick="flex4()"></div>
+             				<div id="flex5"><img src="https://www.udaipurblog.com/wp-content/uploads/2019/12/Street-Food-in-Udaipur-Winter-Special.jpeg" style="width: 100%;height:100%;border-radius: 10%;" onclick="flex5()"></div>
+             		</div>
+             		<div class="rows2" style="margin-top: 15px;">
+             				<div style="margin-right: 15px;" id="flex6"><img src="https://ttnotes.com/images/sahelion-ki-bari-rajasthan-5.jpg" style="width: 100%;height:100%;border-radius: 10%;" onclick="flex6()"></div>
+             				<div style="margin-right: 15px;" id="flex7"><img src="https://www.udaipurlakecity.com/wp-content/uploads/2017/02/shilpgram-830x321.jpg" style="width: 100%;height:100%;border-radius: 10%;" onclick="flex7()"></div>
+             				<div id="flex8"><img src="https://udaipurtourism.co.in/images/places-to-visit/headers/jagdish-temple-udaipur-indian-tourism-entry-fee-timings-holidays-reviews-header.jpg" style="width: 100%;height:100%;border-radius: 10%;" onclick="flex8()"></div>
+             		</div>
+            </div>
+             	<div class="col2">
+             		<div class="text" style="width:93.5%;">Description</div>
+             		<div class="class">
+             			<h1 id="h0">Udaipur</h1>
+             			<p id="para" style="margin-left: 5%;margin-right:5%;letter-spacing: 1px;word-spacing: 2px;">Udaipur (About this soundpronunciation (help·info)), also known as the "City of Lakes" is a city in the state of Rajasthan in India. It is the historic capital of the kingdom of Mewar in the former Rajputana Agency. It was founded in 1558 by Udai Singh II of the Sisodia clan of Rajput, when he shifted his capital from the city of Chittorgarh to Udaipur after Chittorgarh was besieged by Akbar. It remained as the capital city till 1818 when it became a British princely state,[4] and thereafter the Mewar province became a part of Rajasthan when India gained independence in 1947</p></div>
+             	</div>
+             	</div>
+             	<div class="img1" style="background: none;">
+                <div class="holiday" style="border: 4px solid maroon;margin-top: 0px;background-color: khaki;height: 500px;"><h3 id="h2">Udaipur Holiday Package</h3><div style="width: 100%;height: 95px;"><img src="Rajasthan_Images/udai.jpg" height="95" style="width: 100%"></div><span style="color: brown;margin-left: 50px;">6 Nights, 7 Days </span><br><span style="margin-left: 40px;color: green;cursor: pointer;">Hotel: Udai Resort</span><br><span style="margin-left: 40px;color: brown">Delhi(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Udaipur(3)</span><p style="margin-left: 10px;">Safar.com comes with service assurance packages (included sanitary checkup) for exclusive assistance.</p><span class="emi">EMI</span><span style="font-size: 18px;margin-left: 10px;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="color: fuchsia;text-shadow: 2px 2px blue;font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 22px;font-weight: bold;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>20,499</span><br><span style="font-size: 14px;color: grey;margin-left: 125px;">(Per person on </span><span style="font-size: 14px;color: grey;margin-left: 125px;">twin sharing)</span><br><br><a href="form.html" onmouseover="ff7()" onmouseout="ff8(this)" style="background-color: blue; color: white;padding-top: 5px;margin-left: 60px;padding-bottom: 5px;cursor: pointer;" class="p2">Book Now</a></div>
+              </div>
+              </div>
+      <div class="flex" style="width: 85%;height: 320px;margin-top: 150px;">
+        <div style="width: 45%;height: 150px;margin-top: 0px;float: left;margin-left: 2%;" class="fl0">
+          <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/udaipur.jpg" style="width: 100%;height: 150px;" alt="Udaipur">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Udai Resort, Udaipur-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">8 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Mumbai(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Udaipur(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Udaipur.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>30,499</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Per person on twin sharing)</span><br><br><a href="form.html" onmouseover="fff3()" onmouseout="fff4(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="p6">Book Now</a>
+          </div>
+        </div><div style="width: 45%;height: 150px;margin-top: 0px;float: left;margin-left: 5%"  class="fl1">
+           <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/udaipur.jpg" style="width: 100%;height: 150px;" alt="Udaipur">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Welcome Hotel, Udaipur-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">8 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Bangalore(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Udaipur(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Udaipur.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>26,999</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Per person on twin sharing)</span><br><br><a href="form.html" onmouseover="fff1()" onmouseout="fff2(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="p5">Book Now</a>
+          </div>
+        </div><div style="width: 45%;height: 150px;margin-top: 20px;float: left;margin-left: 2%"  class="fl2">
+            <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/udaipur.jpg" style="width: 100%;height: 150px;" alt="Udaipur">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Udaipur Lodge,Udaipur-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">7 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Gujarat(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Udaipur(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Udaipur.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>12,499</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Per person on twin sharing)</span><br><br><a href="form.html" onmouseover="fff()" onmouseout="fff0(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="p4">Book Now</a>
+          </div>
+        </div><div style="width: 45%;height: 150px;margin-top: 20px;float: left;margin-left: 5%"  class="fl3">
+          <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/udaipur.jpg" style="width: 100%;height: 150px;" alt="Udaipur">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Lake Resort,Udaipur-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">6 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Delhi(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Udaipur(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Udaipur.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>50,499</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Specially for families)</span><br><br><a href="form.html" onmouseover="ff9()" onmouseout="ff10(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="p3">Book Now</a></div></div> 
+        </div>
+        <!--h1 style="color:red;text-shadow: 2px 2px blue;text-align:center;font-size: 40px;">Jodhpur</h1-->
+        <div style="width: 85%;margin-left: 15%;height: 50px;margin-top: 500px;"><h1 style="color:red;text-shadow: 2px 2px blue;text-align:center;font-size: 40px;margin-right: 150px;" id="Jodhpur">Jodhpur</h1></div>
+        <div class="Jodhpur" style="margin-top: 5px;">
+          <div class="Jodh" style="height: 350px;">
+            <div class="animation fade" style="width: 100%;height: 400px;display: none;">
+              <div style="width: 100%;height: 300px;"><img src="Rajasthan_Images/jaswant.webp" style="width: 100%;height: 300px;"></div>
+              <div style="color: red;" class="anim"><span style="color: blue;text-shadow: 1px 1px red">Jaswant Thada</span> is a cenotaph located in Jodhpur, in the Indian state of Rajasthan. It was built by Maharaja Sardar Singh of Jodhpur State in 1899 in memory of his father, Maharaja Jaswant Singh 2, and serves as the cremation ground for the royal Rajput family of Marwar.</div>
+            </div>
+            <div class="animation fade" style="width: 100%;height: 350px;display:none;">
+              <div style="width: 100%;height: 300px;"><img src="Rajasthan_Images/mandore.jpg" style="width: 100%;height: 300px;"></div>
+              <div style="color: blue" class="anim"><span style="text-shadow: 1px 1px blue;color: orange;">Mandore Garden</span> is a town located 9 km north of Jodhpur city, in the Indian state of Rajasthan.The place is known as the birthplace of Ravana's wife mandodari. </div>
+            </div>
+            <div class="animation fade" style="width: 100%;height: 350px;display:none;">
+              <div style="width: 100%;height: 300px;"><img src="Rajasthan_Images/megh.jpg" style="width: 100%;height: 300px;"></div>
+              <div style="color: purple;" class="anim"><span style="text-shadow: 1px 1px yellow;color: green;">Mehrangarh </span> located in Jodhpur, Rajasthan, is one of the largest forts in India. Built in around 1459 by Rao Jodha, the fort is situated 410 feet (125 m) above the city and is enclosed by imposing thick walls. Inside its boundaries there are several palaces known for their intricate carvings and expansive courtyards. A winding road leads to and from the city below. The imprints of the impact of cannonballs fired by attacking armies of Jaipur can still be seen on the second gate. To the left of the fort is the chhatri of Kirat Singh Soda, a soldier who fell on the spot defending Mehrangarh. There are seven gates, which include Jayapol (meaning 'victory gate'), built by Maharaja Man Singh to commemorate his victories over Jaipur and Bikaner armies. There is also a Fattehpol (also meaning 'victory gate'), which commemorates Maharaja Ajit Singhji victory over Mughals. </div>
+            </div>
+            <div class="animation fade" style="width: 100%;height: 350px;display:none;">
+              <div style="width: 100%;height: 300px;"><img src="Rajasthan_Images/rao.png" style="width: 100%;height: 300px;"></div>
+              <div style="color: fuchsia;" class="anim"><span style="text-shadow: 1px 1px fuchsia;color: blue;">Rao Jodha Deset Rock Park</span> spreads over 72 hectares, near the historic Mehrangarh Fort in Jodhpur, Rajasthan, India. The park contains ecologically restored desert and arid land vegetation. The park was created in 2006 to try and restore the natural ecology of a large, rocky area adjoining and below the fort.</div>
+            </div>
+            <div class="animation fade" style="width: 100%;height: 350px;display:none;">
+              <div style="width: 100%;height: 300px;"><img src="Rajasthan_Images/toorji.jpg" style="width: 100%;height: 300px;"></div>
+              <div style="color: springgreen;" class="anim"><span style="text-shadow: 1px 1px springgreen;color: deeppink">Toorji ka Jhalra Bavdi</span> is one of the most fabulous architectures of ancient time. Also, Rajasthan has a large number of ‘kund’ or the stepwells and one of the most beautiful one in Jodhpur is Toorji ka Jhalra. This stepwell or the ‘jhalra’ was built in the 1740s by a queen of Maharaja Abhay Singh. There was an age old tradition in Jodhpur of constructing stepwells or step-ponds by the queens or royal ladies. </div>
+            </div>
+            <div class="animation fade" style="width: 100%;height: 350px;display:none;">
+              <div style="width: 100%;height: 300px;"><img src="Rajasthan_Images/umaid.png" style="width: 100%;height: 300px;"></div>
+              <div style="color: green;" class="anim"><span style="text-shadow: 1px 1px aqua;color: fuchsia;">Umaid Bhawan Palace</span> located in Jodhpur in Rajasthan, India, is one of the world's largest private residences. A part of the palace is managed by Taj Hotels. Named after Maharaja Umaid Singh, grandfather of the present owner Gaj Singh. The palace has 347 rooms and is the principal residence of the former Jodhpur royal family. A part of the palace is a museum. Ground for the foundations of the building was broken on 18 November 1929 by Maharaja Umaid Singh and the construction work was completed in 1943. </div>
+            </div>
+          </div>
+          <div class="pur" style="background-color: lightgreen;height: 400px;border: 4px solid maroon;border-radius: 10%;width: 14.45%"><h1>Jodhpur</h1><img src="Rajasthan_Images/jodhpur1.jpg" style="width: 100%;height: 100px;"><p style="margin-left: 10px;margin-right: 10px;font-size: 14px;">The city which is also called as the</p><h2 style="margin-top: 0">Blue City</h2><p style="margin-left: 10px;margin-right: 10px;margin-top: 0;font-size: 14px">As the houses are blue painted in the old area of the city. It is also said as the</p><h2 style="margin-top: 0">Sun City</h2></div>
+          <div class="flex" style="width: 85%;height: 320px;margin-top: 40px;">
+        <div style="width: 45%;height: 150px;margin-top: 0px;float: left;margin-left: 2%;" class="fl0">
+          <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/jodhpur.jpg" style="width: 100%;height: 150px;" alt="Jodhpur">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Jodha Resort, Jodhpur-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">4 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Mumbai(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Jodhpur(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Jodhpur.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>10,499</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Per person on twin sharing)</span><br><br><a href="form.html" onmouseover="c0()" onmouseout="c1(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="c">Book Now</a>
+          </div>
+        </div><div style="width: 45%;height: 150px;margin-top: 0px;float: left;margin-left: 5%"  class="fl1">
+           <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/jodhpur.jpg" style="width: 100%;height: 150px;" alt="jodhpur">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Welcome Hotel, Jodhpur-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">3 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Bangalore(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Jodhpur(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Jodhpur.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>6,999</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Per person on twin sharing)</span><br><br><a href="form.html" onmouseover="c2()" onmouseout="c3(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="c1">Book Now</a>
+          </div>
+        </div><div style="width: 45%;height: 150px;margin-top: 20px;float: left;margin-left: 2%"  class="fl2">
+            <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/jodhpur.jpg" style="width: 100%;height: 150px;" alt="Jodhpur">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Jodhpur Lodge,Jodhpur-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">3 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Gujarat(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Jodhpur(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Jodhpur.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>2,499</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Per person on twin sharing)</span><br><br><a href="form.html" onmouseover="c4()" onmouseout="c5(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="c2">Book Now</a>
+          </div>
+        </div><div style="width: 45%;height: 150px;margin-top: 20px;float: left;margin-left: 5%"  class="fl3">
+          <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/jodhpur.jpg" style="width: 100%;height: 150px;" alt="Jodhpur">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Megh Resort,Jodhpur-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">6 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Delhi(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Jodhpur(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Jodhpur.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>30,999</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Specially for families)</span><br><br><a href="form.html" onmouseover="c6()" onmouseout="c7(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="c3">Book Now</a></div></div> 
+        </div></div>
+        <div style="width: 85%;margin-left: 15%;height: 50px;margin-top: 50px;"><h1 style="color:red;text-shadow: 2px 2px blue;text-align:center;font-size: 40px;margin-right: 150px;" id="Mount">Mount Abu</h1></div>
+        <div class="Mount" style="margin-top: 5px;">
+          <div class="mount" style="height: 300px;">
+            <div style="float: left;width: 60%;height: 300px;">
+              <div class = "screen fade" style="width: 100%;height: 300px;display: none"><img src="Rajasthan_Images/dilwara.png" style="width: 100%;height: 300px;"></div>
+              <div class = "screen fade" style="width: 100%;height: 300px;display: none;"><img src="Rajasthan_Images/guru.jpg" style="width: 100%;height: 300px;"></div>
+              <div class = "screen fade" style="width: 100%;height: 300px;display: none"><img src="Rajasthan_Images/gau.jpg" style="width: 100%;height: 300px;"></div>
+              <div class = "screen fade" style="width: 100%;height: 300px;display: none;"><img src="Rajasthan_Images/sunset.jpg" style="width: 100%;height: 300px;"></div>
+              <div class = "screen fade" style="width: 100%;height: 300px;display: none"><img src="Rajasthan_Images/achal.jpg" style="width: 100%;height: 300px;"></div>
+              <div class = "screen fade" style="width: 100%;height: 300px;display: none;"><img src="Rajasthan_Images/naki.jpg" style="width: 100%;height: 300px;"></div>
+              <div class = "screen fade" style="width: 100%;height: 300px;display: none"><img src="Rajasthan_Images/cuisine.jpg" style="width: 100%;height: 300px;"></div>
+            </div>
+            <div style="float: left;width: 40%;height: 300px;">
+              <div class = "show fade" style="width: 100%;height: 300px;display: none;color: green"><h2>Dilwara Temples</h2><br><p>The Dilwara Temples or Delvada Temples are a group of Jain temples located about ​2 ¹⁄₂ kilometres from the Mount Abu settlement, Rajasthan's only hill station. The earliest were built by Vimal Shah and supposedly designed or at least financed by Vastupala, Jain minister of Dholka. </p></div>
+              <div class = "show fade" style="width: 100%;height: 300px;display: none;color: red"><h2 style="color: green;">Guru Shikar</h2><br><p>Guru Shikhar, a peak in the Arbuda Mountains of Rajasthan, is the highest point of the Aravalli Range. It rises to an elevation of 1,722 metres. It is 15 km from Mount Abu and a road from there leads almost to the top of the mountain.</p></div>
+              <div class = "show fade" style="width: 100%;height: 300px;display: none;color: fuchsia;"><h2 style="color: purple">Gaumaukh Temple</h2><br><p>The Gaumukh Temple was built in its location as a dedication to Saint Vashishth. It is believed that Saint Vashishth performed a yagna there that created the four major Rajput clans. There is also a tank that you should visit- the Agni Kund. The Agni Kund is believed to be the site of a sacrificial fire which Saint Vashishth used to perform the yagni from which the four clans were born.</p></div>
+              <div class = "show fade" style="width: 100%;height: 300px;display: none;color: indigo"><h2 style="color: red;">Sunset Point</h2><br><p>The outlandish view of the rugged Aravali ranges, sunkissed by the radiating rays of the setting sun is what draws scores of tourists to this picturesque location near the famous Nakki Lake. The Sunset Point in Mount Abu is frequented by nature lovers who revel in the setting rays of the sun. This is a perfect picnic spot as one can admire the magic of the coloured sky as the sun sets, painted in hues of red and orange, contrary to the rich greenery of the Aravali Ranges in the background.</p></div>
+              <div class = "show fade" style="width: 100%;height: 300px;display: none;color: deeppink"><h2 style="color: chocolate;">Achalgarh Temple</h2><br><p>Achalgarh is a fort situated about 11 kilometres (6.8 mi) north of Mount Abu, a hill station in Rajasthan, India. The fort was originally built by the Paramara dynasty rulers and later reconstructed, renovated and named as Achalgarh by Maharana Kumbha in 1452 CE, one of the 32 forts built during his reign.The fort is in a dilapidated condition now. The first gate of the fort is known as Hanumanpol, which served as the entrance to the lower fort.</p></div>
+              <div class = "show fade" style="width: 100%;height: 300px;display: none;color: blue"><h2 style="color: springgreen;">Nakki Lake</h2><br><p>Nakki Lake is a lake situated in the Indian hill station of Mount Abu in Aravalli range. The lake is in length of about a half mile and in width about of a quarter of mile and 20 to 30 ft. deep towards the dam on the west. It is an important tourist attraction of Mount Abu. There is the Toad Rock on a hill near the lake. Toad rock is so called as it looks like a toad about to jump into the lake, from the side of the rock facing the lake. There are two ways to go up and down the rock; to climb the rocky hill side or to use the steps leading down to Nakki Lake.</p></div>
+              <div class = "show fade" style="width: 100%;height: 300px;display: none;color: orange"><h2 style="color: navy">Mount Abu's Cuisine</h2><br><p>Ghewar is the top dish to try here. It is made with wheat flour and ghee. You can find this in almost all restaurants in and around Mount Abu. When it comes to beverage, the common one is sweetened churned curd or lassi. The best variety of lassi to try in Mount Abu is Makhaniya lassi. This lassi is made with yogurt, sugar, homemade cream, cashew, pistachios and saffron. Other styles of beverages to try are aam panna, bael juice, thadai, chacch and others.</p></div>
+            </div>
+          </div>
+          <div class="abu" style="background-color: lightgrey;height: 300px;border:4px solid maroon;width: 14.4%;border-radius: 10%;margin-top: 0px;">
+            <h1>Mount Abu</h1><h2>The Shimla</h2><p id="q">of</p><h2>Rajasthan</h2>
+          </div>
+        </div>
+        <div class="flex" style="width: 85%;height: 320px;margin-top: 40px;">
+        <div style="width: 45%;height: 150px;margin-top: 0px;float: left;margin-left: 2%;" class="fl0">
+          <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/mount.jpg" style="width: 100%;height: 150px;" alt="Mount Abu">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Mount Resort, Mount-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">4 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Mumbai(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Mount-Abu(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Mount-Abu.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>15,499</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Per person on twin sharing)</span><br><br><a href="form.html" onmouseover="c8()" onmouseout="c9(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="c4">Book Now</a>
+          </div>
+        </div><div style="width: 45%;height: 150px;margin-top: 0px;float: left;margin-left: 5%"  class="fl1">
+           <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/mount.jpg" style="width: 100%;height: 150px;" alt="Mount-Abu">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Welcome Hotel, Mount-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">3 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Bangalore(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Mount-Abu(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Mount-Abu.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>10,999</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Per person on twin sharing)</span><br><br><a href="form.html" onmouseover="c10()" onmouseout="c11(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="c5">Book Now</a>
+          </div>
+        </div><div style="width: 45%;height: 150px;margin-top: 20px;float: left;margin-left: 2%"  class="fl2">
+            <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/mount.jpg" style="width: 100%;height: 150px;" alt="Mount-Abu">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Abu Lodge,Mount-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">3 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Gujarat(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Mount-Abu(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Mount-Abu.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>5,499</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Per person on twin sharing)</span><br><br><a href="form.html" onmouseover="c12()" onmouseout="c13(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="c6">Book Now</a>
+          </div>
+        </div><div style="width: 45%;height: 150px;margin-top: 20px;float: left;margin-left: 5%"  class="fl3">
+          <div style="width: 25%;float:left;height: 150px;">
+            <img src="Rajasthan_Images/mount.jpg" style="width: 100%;height: 150px;" alt="Jodhpur">
+          </div><div style="background-color: lightpink;width: 50%;float:left;height: 150px;">
+             <h3>Megh Resort,Jodhpur-Volvo</h3><span style="color: black;margin-left: 0px;margin-top: 0px;font-size: 12px;border: 2px solid white;border-radius: 4px;cursor: pointer;">6 Nights</span><span style="margin-left: 50px">seller.safar.com</span><br><span>Delhi(1)<i class="fa fa-arrow-right" aria-hidden="true"></i> Mount Abu(3)</span><p style="font-size: 12px;">Safar.com comes with service assurance package for exploring the Mount Abu.</p>
+          </div><div style="background-color: lavender;width: 25%;float:left;height: 150px;">
+            <span style="font-size: 15px;margin-right: 10px;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>399</span><span style="font-size: 15px;float:right; margin-right: 10px;" class="emi">EMI</span><br><span style="font-family: cursive; font-style: italic;letter-spacing: 1px;margin-left: 30px;font-size: 25px;font-weight: bold;float:right;cursor: pointer;"><i class="fa fa-inr" aria-hidden="true"></i>20,999</span><br><br><br><span style="font-size: 12px;color: grey;margin-left: 0px;">(Specially for families)</span><br><br><a href="form.html" onmouseover="c14()" onmouseout="c15(this)" style="background-color: orange; color: white;padding-top: 5px;margin-left: 30px;font-size: 12px;padding-bottom: 5px;cursor: pointer;" class="c7">Book Now</a></div></div> 
+        </div>
+        <div style="background-color:black;width: 75%;margin-left: 15%;height: 250px;margin-top: 20px;float: left;text-align: center">
+          <div style="width: 100%;height: 245px;float: left;">
+            <div style="height: 150px;width: 25%;float:left">
+            <h3 style="color: white">Was this page helpful?</h3><input type="radio" id="yes" name="gen" value="yes"><label for="yes" style="color: white">Yes</label>&nbsp; &nbsp; &nbsp; &nbsp;<input type="radio" id="no" name="gen" value="no"><label for="no" style="color: white">No</label><br><textarea rows="3" cols="30" style="margin-left: 35px" placeholder="Please type your feedback or any suggestions....."></textarea>
+            <br><br>
+            <input type="submit" value="Submit" name="Submit" id="submit" style="background-color: blue;padding: 5px;margin-right: 100px;width: 100px;">
+          </div>
+          <div style="width:14%;height: 150px;float:left;margin-left: 1%">
+            <table style="margin-left: 30px;margin-top: 20px;">
+              <tr><td><i class="fa fa-phone fa_custom fa-x" style="color: yellow"></i></td><td style="font-size: 13px;color: white;"><em>91+ 44125-15978</em></td></tr>
+              <tr><td><i class="fa fa-envelope" style="color: yellow"></i></td><td style="font-size: 13px;color: white;"><em>safar@gmail.com</em></td></tr>
+              <tr><td><i class="fa fa-comment" style="color: yellow"></i></td><td style="font-size: 13px;color: white;"><em>91+ 9856-14325</em></td></tr>
+              <tr><td><i class="fa fa-address-card" style="color: yellow"></i></td><td style="font-size: 13px;color: white;"><em>safar.telegram</em></td></tr>
+              <tr><td><i class="fa fa-university" style="color: yellow"></i></td><td style="font-size: 13px;color: white;"><em>#245, street lane, Punjab, Ludhiana</em></td></tr>
+            </table>
+          </div>
+          <div style="width: 20%;margin-left: 0%;height: 150px;float: left" class="footerlink">
+            <h2>About</h2><a href="html/about.html">About Safar.com</a><br><a href="">Service Guarante</a><br><a href="" style="margin-right: 60px;">News</a><br><a href="" style="margin-right: 50px;">Careers</a><br><a href="" style="margin-left: 15px;">Terms & Conditions</a><br><a href="" style="margin-left: 10px;">Privacy Statements</a>
+          </div>
+          <div style="width: 20%;margin-left: 0%;height: 150px;float: left" class="footerlink">
+            <h2>Other Services</h2><a href="">Investor Relations</a><br><a href="">Safar.com Rewards</a><br><a href="" style="margin-right: 8px;">Affilate Programs</a><br><a href="" style="margin-right: 50px;">All Hotels</a><br><a href="" style="margin-left: 22px;">Ticket Business Alliance</a><br>
+          </div>
+          <div style="width: 20%;margin-left: 0%;height: 150px;float: left" class="footerlink">
+            <h2>Contact Us</h2><a href="html/contactus.html">Website Feedback</a><br><a href="html/contactus.html">Customer Support</a>
+          </div>
+          <div style="width: 100%;height: 50px;float:left;margin-top:60px;color: white;"><address>Copyright © 2020 Safar.com Travel India Pte. Ltd. All rights reserved<br>Site Operator: Safar.com Travel India Pte. Ltd.</address></div></div>
+      </div>
+      <div style="width: 10%;float: left;height: 250px;margin-top: 20px;">
+        <div style="width: 50%;height: 70px;text-align: center;margin-top: 5px;border-radius: 50%;margin-left: 35px;border: 2px solid green;" title="go to top page"><a href="#head"><i class="fa fa-arrow-up" style="padding-top: 5px;font-size: 50px;color: green;width: 50px;"></i></div><div style="width: 50%;height: 70px;text-align: center;margin-top: 5px;margin-left: 35px;" title="go to Home page"><a href="index.html"><i class="fa fa-home" style="padding-top: 5px;font-size: 60px;color: red;"></i></a></div><div style="width: 50%;height: 70px;text-align: center;margin-top: 5px;border-radius: 50%;margin-left: 35px;border: 2px solid blue;" title="go to next page"><a href="webDelhi.html"><i class="fa fa-arrow-right" style="padding-top: 5px;font-size: 50px;color: blue;width: 50px;"></i></div>
+      </div>
+    </body>
+    <script>
+    	 var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+           dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
+    });
+  }
+
+  var myIndex = 0;
+  var index = 0;
+  var slideIndex = 0;
+  var my = 0;
+  var Index = 0;
+  carousel();
+
+  function carousel() {
+  var x = document.getElementsByClassName("slides");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+  slide();
+  function slide(){
+    var x = document.getElementsByClassName("animation");
+    for (var i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    index++;
+  if (index > x.length) {index = 1}    
+  x[index-1].style.display = "block";  
+  setTimeout(slide, 9000); // Change image every 2 seconds
+}
+
+show();
+function show() {
+  var slides = document.getElementsByClassName("screen");
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  my++;
+  if (my > slides.length) {my = 1}    
+  slides[my-1].style.display = "block";
+  setTimeout(show, 10000); // Change image every 2 seconds
+}
+
+shows();
+function shows() {
+  var slides = document.getElementsByClassName("show");
+  for ( var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  Index++;
+  if (Index > slides.length) {Index = 1}    
+  slides[Index-1].style.display = "block";
+  setTimeout(shows, 10000); // Change image every 2 seconds
+}
+
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+    </script></html>
