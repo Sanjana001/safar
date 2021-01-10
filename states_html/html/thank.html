@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>thanks page</title>
+    <link rel="stylesheet" href="thank.css">
+</head>
+<body>
+    <div class="jumbotron text-center">
+             <div>
+
+        <h1 class="display-3" id="h1"><marquee behaviour="scroll" direction="left" scrollamount="10">Thank You!</marquee></h1></div>
+        <p class="lead"><strong>Please check your email</strong> for more details and updates</p>
+        <hr>
+        <p>
+          Having trouble? <a href="contactus.html">Contact us</a>
+        </p>
+		</style></div>
+</body>
+<script>
+  var i=0;
+var arr = [];
+var time = 2000;
+
+arr[0] = 'blue';
+arr[1]='red';
+arr[2]='green';
+arr[3]='purple';
+arr[4]='deeppink';
+ChangeImg();
+
+function ChangeImg()
+{
+  if(i%2==0){
+document.getElementById("h1").style.color = arr[i];
+document.getElementById("h1").style.fontFamily = "cursive";
+}
+else{
+  document.getElementById("h1").style.color = arr[i];
+document.getElementById("h1").style.fontFamily = "serif";
+}
+
+if(i< arr.length -1)
+{
+i++;}
+else{i=0;}
+setTimeout("ChangeImg()",time);
+}
+window.onload = ChangeImg;
+</script>
+</html>
