@@ -1,0 +1,41 @@
+body{background-image: url("C:\Users\abhib.jpg");
+
+	background-color: #d17572da;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+.display-3
+{
+/*/background-image: url("back.png");*/
+font-display: 100px;
+font-size: 5em;
+            background-color: #d2ec3b;
+            font-family: 'Open Sans', sans-serif;
+            block-size: inherit;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            min-height: 50vh;
+            margin: 0;
+            height: 50px;
+}
+
+.lead{
+    background-color: mediumslateblue;
+    padding: 30px;
+    background-blend-mode: soft-light;
+    font-size-adjust: inherit;
+    align-items: baseline;
+    background-position-y: 10cm;
+    block-size: 35px;
+    border: solid 3px;
+    align-items: baseline;
+
+}
+div.lead{
+    font-size: 20em;
+}
